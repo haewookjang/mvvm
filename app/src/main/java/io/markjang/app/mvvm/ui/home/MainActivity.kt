@@ -1,10 +1,11 @@
-package io.markjang.app.mvvm
+package io.markjang.app.mvvm.ui.home
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentTransaction
 import dagger.hilt.android.AndroidEntryPoint
+import io.markjang.app.mvvm.R
 
 @AndroidEntryPoint
 class MainActivity : AppCompatActivity() {
@@ -13,7 +14,10 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         supportFragmentManager.inTransaction {
-            add(R.id.fragment_container, HomeFragment())
+            add(
+                R.id.fragment_container,
+                HomeFragment()
+            )
         }
     }
 

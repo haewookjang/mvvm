@@ -1,24 +1,18 @@
-package io.markjang.app.mvvm
+package io.markjang.app.mvvm.ui.home
 
-import android.os.Bundle
-import android.view.LayoutInflater
 import android.view.View
-import android.view.ViewGroup
-import androidx.databinding.ViewDataBinding
-import androidx.fragment.app.createViewModelLazy
-import androidx.fragment.app.viewModels
-import androidx.lifecycle.Observer
-import dagger.hilt.EntryPoint
 import dagger.hilt.android.AndroidEntryPoint
 import io.markjang.app.core.base.BaseDataBindingFragment
 import io.markjang.app.core.base.createViewModels
+import io.markjang.app.mvvm.R
 import io.markjang.app.mvvm.databinding.FragmentHomeBinding
-import timber.log.Timber
 
 
 @AndroidEntryPoint
 class HomeFragment :
-    BaseDataBindingFragment<FragmentHomeBinding, HomeViewModel>(R.layout.fragment_home) {
+    BaseDataBindingFragment<FragmentHomeBinding, HomeViewModel>(
+        R.layout.fragment_home
+    ) {
 
     private val vm: HomeViewModel by createViewModels()
 
