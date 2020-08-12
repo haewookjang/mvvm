@@ -27,9 +27,9 @@ class HomeFragment :
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         viewModel.search.observe(this, Observer {
-            Intent(requireContext(), DemoService::class.java).also {
-                activity?.startService(it)
-            }
+//            Intent(requireContext(), DemoService::class.java).also {
+//                activity?.startService(it)
+//            }
         })
     }
 

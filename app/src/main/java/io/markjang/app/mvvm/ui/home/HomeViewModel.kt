@@ -52,12 +52,12 @@ class HomeViewModel @ViewModelInject constructor(
 //                }
 //            }
 
-//            searchRepositoriesUseCase(q)
-//                .collect { result ->
-//                    result.success<RepositoryList> {
-//
-//                    }
-//                }
+            searchRepositoriesUseCase(q)
+                .collect { result ->
+                    result.success<RepositoryList> {
+
+                    }
+                }
 
         }
     }
