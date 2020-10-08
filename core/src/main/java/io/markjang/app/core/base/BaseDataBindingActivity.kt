@@ -17,5 +17,6 @@ abstract class BaseDataBindingActivity<VB : ViewDataBinding>(@LayoutRes val layo
         setContentView(binding.root)
         binding.lifecycleOwner = this
 
+
     }
 }
